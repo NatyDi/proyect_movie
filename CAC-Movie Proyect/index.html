@@ -1,42 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/079518fcaf.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="shortcut icon" href="static/img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="estilos.css">
     <title>CAC-Movie</title>
 </head>
+
 <body>
     <header class="header">
         <nav class="navegacion">
-        <a href="#" class="anclalogo">
-            <i class="fa-solid fa-film" aria-hidden="true"></i>
-            <span>CAC-Movies</span>
-        </a>
-        <ul class="ListaNav">
-            <li class="listaItem"><a href="#" class="linkNav">Tendencias</a></li>
-            <li class="listaItem"><a href="#" class="linkNav">Registrate</a></li>
-           <li class="listaItem"><a href="#" class="linkNav iniciarSesion">Iniciar Sesión</a></li>
-        </ul>
-      </nav>
+            <a href="#" class="anclalogo">
+                <i class="fa-solid fa-film" aria-hidden="true"></i>
+                <span>CAC-Movies</span>
+            </a>
+            <ul class="ListaNav">
+                <li class="listaItem"><a href="#" class="linkNav">Tendencias</a></li>
+                <li class="listaItem"><a href="#" class="linkNav">Registrate</a></li>
+                <li class="listaItem"><a href="#" class="linkNav iniciarSesion">Iniciar Sesión</a></li>
+            </ul>
+        </nav>
     </header>
-       <main>
-        <div class="contenedor">
-            <img src="cine.png" alt="">
-         <div>
-        <h1 class="titulo1">Peliculas y series ilimitadas en un solo lugar</h1>
-        <h2 class="titulo2">Disfruta donde quieras..</h2>
-        <h3 class="titulo3">Cancela en cualquier momento.</h3>
-        <a class="registrate" href="./templates/Registrate.html">Registrate</a>
-       
-       
-    </main>
-    
-    </body>
+    <main class="main">
+        <section class="banner">
+            <img src="cine.png" alt="banner">
+            <div class="textos">
+                <h1 class="titulo1">Peliculas y series ilimitadas  en un solo lugar</h1>             
+                <h2 class="titulo2">Disfruta donde quieras.</h2>
+                <h3 class="titulo3">Cancela en cualquier momento.</h3>
+                <a class="registrate" href="./templates/Registrate.html">Registrate</a>
+            </div>
+        </section>
 
-    
+        <section class="buscador">
+            <h2>¿Qué estás buscando para ver?</h2>
+            <form action="" class="inputs">
+                <input type="text" placeholder="Buscar..." class="search">
+                <input type="submit" value="Buscar" class="boton">
+            </form>
+        </section>
+
+
+    </main>
+    <footer>
+        <P>CAC-MOVIE DERECHOS RESERVADOS@2024</P>
+    </footer>
+</body>
+
+
 </html>
