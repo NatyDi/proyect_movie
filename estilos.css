@@ -24,8 +24,8 @@ header {
         justify-content: space-between;
         align-content: center;
         align-items: center;
-        margin-left: 20px;
-        margin-right: 20px;
+        margin-left: 40px;
+        margin-right: 40px;
         padding: 1.8rem 0;
 
         .anclalogo {
@@ -98,11 +98,13 @@ main {
     height: 100%;
     margin: 0;
     width: 100%;
+    margin-right: 20px;
 
     .banner {
         width: 100%;
         height: 100vh;
         object-fit: cover;
+        
         
         .textos {
             width: 100%;
@@ -115,21 +117,23 @@ main {
                 font-size: 50px;
                 color: white;
                 padding: 10px 20px;
+                margin-top: 5px;
             }
 
             .titulo2 {
                 font-size: 50px;
                 color: white;
+                margin-bottom: 20px;
             }
 
             .titulo3 {
                 font-size: 50px;
                 color: white;
-                padding: 10px 20px;
+                padding: 20px 20px;
             }
 
             .registrate {
-                margin-top: 35px;
+                margin-top: 10px;
                 max-width: 150px;
                 min-width: 100px;
                 background-color: maroon;
@@ -154,8 +158,9 @@ main {
         height: 65vh;
 
         h2 {
-            margin-bottom: 32px;
-          font-size: 50px;
+            margin-top: 300px;
+            font-size: 30px;
+         
         }
 
       
@@ -177,7 +182,7 @@ main {
                 height: 40px;
                 max-width: 150px;
                 min-width: 100px;
-                padding: 10px;
+                padding: 0px;
                 background-color: maroon;
                 color: #ffffff;
                 border: none;
@@ -201,13 +206,12 @@ footer {
         background-color: maroon;
         color: #ffffff;
         text-align: center;
-        height: 15vh;
-        bottom: 0;
+        padding: 1rem;
+        position: absolute;
+        bottom: 200;
         width: 100%;
 
     }
-}
-
 
 
 @media (max-width: 769px) {
