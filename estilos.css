@@ -24,8 +24,8 @@ header {
         justify-content: space-between;
         align-content: center;
         align-items: center;
-        margin-left: 40px;
-        margin-right: 40px;
+        margin-left: 20px;
+        margin-right: 20px;
         padding: 1.8rem 0;
 
         .anclalogo {
@@ -103,9 +103,10 @@ main {
     .banner {
         width: 100%;
         height: 100vh;
-        object-fit: cover;
-        
-        
+        background-image: url(cine.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+
         .textos {
             width: 100%;
             display: flex;
@@ -114,31 +115,27 @@ main {
             align-items: center;
 
             .titulo1 {
-                font-size: 50px;
+                font-size: 80px;
                 color: white;
                 padding: 10px 20px;
-                margin-top: 5px;
+                margin-top: 300px;
+                            }
+
+            .subtitulo {
+                color: white;
+                font-size: 50px;
             }
 
-            .titulo2 {
-                font-size: 50px;
-                color: white;
-                margin-bottom: 20px;
-            }
 
-            .titulo3 {
-                font-size: 50px;
-                color: white;
-                padding: 20px 20px;
-            }
 
             .registrate {
-                margin-top: 10px;
-                max-width: 150px;
+                margin-top: 95px;
+                max-width: 250px;
                 min-width: 100px;
                 background-color: maroon;
-                color: #ffffff;
-                font-weight: 800;
+                color: hsl(0, 0%, 100%);
+                font-weight: 700;
+                font-size: x-large;
                 padding: 10px 20px;
                 text-decoration: none;
                 border-radius: 5px;
@@ -158,12 +155,11 @@ main {
         height: 65vh;
 
         h2 {
-            margin-top: 300px;
-            font-size: 30px;
-         
+            margin-bottom: 32px;
+            font-size: 50px;
         }
 
-      
+
 
         .inputs {
             width: 80%;
@@ -182,7 +178,7 @@ main {
                 height: 40px;
                 max-width: 150px;
                 min-width: 100px;
-                padding: 0px;
+                padding: 10px;
                 background-color: maroon;
                 color: #ffffff;
                 border: none;
@@ -190,6 +186,96 @@ main {
                 font-weight: 700;
             }
         }
+    }
+
+    .Peliculas {
+        width: 100%;
+        background-color: #171419;
+        margin-bottom: 200v;
+
+
+        h2 {
+            font-size: 40px;
+        margin-bottom: 100px;
+        }
+
+        .peliculas-contenedor {
+            margin-top: 200px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+
+            .pelicula {
+                width: 210px;
+                border-radius: 10px;
+                overflow: hidden;
+
+                margin: 30px 30px;
+
+                .poster {
+                    border-radius: 10px;
+                    width: 200px;
+                    height: 280px;
+                }
+
+                h3 {
+                    flex-wrap: wrap;
+                    font-size: 20px;
+                }
+            }
+        }
+
+        .botones {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin-bottom: 250px;
+
+            .btn-pag {
+                margin: 0 30px;
+                max-width: 180px;
+                min-width: 100px;
+                background-color: maroon;
+                color: #ffffff;
+                font-weight: 600;
+                padding: 10px 20px;
+                text-decoration: none;
+                border: none;
+                border-radius: 5px;
+                box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+                font-size: 1.5rem;
+
+            }
+        }
+
+
+        .recomendaciones {
+            margin-top: 40px;
+            background-color: #171419;
+            width: 100%;
+
+            .recomendaciones-contenedor {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+
+                .peli-recom {
+                    width: 200px;
+                    border-radius: 10px;
+                    overflow: hidden;
+                    margin: 10px 20px;
+
+                    .poster2 {
+                        border-radius: 10px;
+                        width: 200px;
+
+                    }
+                }
+            }
+        }
+
     }
 
 
@@ -203,15 +289,22 @@ main {
 
 footer {
 
+    
         background-color: maroon;
         color: #ffffff;
         text-align: center;
-        padding: 1rem;
-        position: absolute;
-        bottom: 200;
+        height: 5vh;
+        position: fixed;
+        bottom: 0;
         width: 100%;
+        padding-top: 10px;
 
     }
+    
+    
+    
+
+
 
 
 @media (max-width: 769px) {
@@ -249,10 +342,14 @@ footer {
     .main {
         .banner {
             height: 80vh;
+
             .textos {
-              h1,h2,h3{
-                font-size: 30px;
-              }
+
+                h1,
+                h2,
+                h3 {
+                    font-size: 30px;
+                }
             }
         }
     }
@@ -263,7 +360,7 @@ footer {
 
 @media (max-width:410) {
 
-    .textos{
+    .textos {
         font-size: 20px;
     }
 }
