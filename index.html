@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="estilos.css">
+    <script  defer src="api.js"></script>
     <title>CAC-Movie</title>
 </head>
 
@@ -27,13 +28,14 @@
         </nav>
     </header>
     <main class="main">
-        <section class="banner">
-            <img src="cine.png" alt="banner">
+        <section class=" banner">
             <div class="textos">
-                <h1 class="titulo1">Peliculas y series ilimitadas  en un solo lugar</h1>             
-                <h2 class="titulo2">Disfruta donde quieras.</h2>
-                <h3 class="titulo3">Cancela en cualquier momento.</h3>
-                <a class="registrate" href="register.html">Registrate</a>
+                <h1 class="titulo1">Peliculas y series ilimitadas <br>
+                    en un solo lugar
+                </h1>
+                <p class="subtitulo">Disfruta donde quieras..</p>
+                <p class="subtitulo">Cancela en cualquier momento.</p>
+                <a class="registrate" href="/register.html">Registrate</a>
             </div>
         </section>
 
@@ -45,13 +47,46 @@
             </form>
         </section>
 
+        <section class="Peliculas">
+            <h2>Las tendencias de hoy</h2>
+
+            <div class="peliculas-contenedor" id="peliculas-contenedor">
+
+                <!-- ACA SE USA EL SCRIPT API, QUE TRAERA LAS PELICULAS Y LAS MOSTRARA -->
+
+                
+
+            </div>
+
+            <div class="botones">
+
+                <button class="btn-pag" id="btnAnterior">
+                    Anterior
+                </button>
+                <button class="btn-pag" id="btnSiguiente">
+                    Siguiente
+                </button>
+            </div>
+
+            <section class="recomendaciones">
+                <h2> Te podrían gustar...</h2>
+                <div class="recomendaciones-contenedor" id="recomendaciones-contenedor">
+
+                    <!-- Aqui se cargan las recomendaciones -->
+
+                </div>
+            </section>
+
+        </section>
+
+      <footer>
+
+        <h3>Todos los derechos reservados CACMOVIE</h3>
+      </footer>
+
 
     </main>
-    <footer>
-        <P>CAC-MOVIE DERECHOS RESERVADOS@2024</P>
-    </footer>
 
-    <script src="validar.js"></script>
 </body>
 
 

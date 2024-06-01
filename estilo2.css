@@ -1,6 +1,9 @@
 body {
     font-family: 'Nunito', sans-serif;
-    background-image: url('iniciosesion.png');no-repeat center center fixed; /* Reemplaza con la URL de tu imagen de fondo */
+    background-image: url('iniciosesion.png'); /* Reemplaza con la URL de tu imagen de fondo */
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
     background-size: cover;
     margin: 0;
     color: #fff;
@@ -73,27 +76,36 @@ body {
     font-size: 0.8rem;
     margin-top: 5px;
 }
+
 .input-group input::placeholder {
     color: #bbb;
 }
 
-button {
+.boton {
     width: 100%;
     padding: 15px;
-    background-color: #421010;
+    background-color: #5e1616; /* Color rojo por defecto */
     border: none;
     border-radius: 5px;
     color: white;
     font-size: 18px;
     cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
 }
 
-button:hover {
+.boton:hover {
     background-color: #151615;
+    color: #ffcc00; /* Cambiar a un color llamativo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.boton:active {
+    background-color: #000; /* Cambiar a negro cuando se hace clic */
+    color: #fff; /* Mantener el texto blanco al hacer clic */
 }
 
 .ayuda {
-    color: #181a18;
+    color: #1417cf;
     display: block;
     margin-top: 20px;
     text-decoration: none;
@@ -102,4 +114,3 @@ button:hover {
 .ayuda:hover {
     text-decoration: underline;
 }
-
